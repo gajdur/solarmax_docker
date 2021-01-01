@@ -9,10 +9,10 @@ import paho.mqtt.publish as publish
 # publishes the data to a mqtt listener
 
 # constants
-inverter_ip = os.environ.get('SOLARMAX_HOST', '192.168.2.3')
+inverter_ip = os.environ.get('SOLARMAX_HOST', '192.168.8.3')
 inverter_port = int(os.environ.get('SOLARMAX_PORT', 12345))
 
-mqtt_broker_ip = os.environ.get('MQTT_HOST', 'mqtt')
+mqtt_broker_ip = os.environ.get('MQTT_HOST', '192.168.0.10')
 mqtt_broker_port = int(os.environ.get('MQTT_PORT', 1883))
 
 mqtt_broker_url = "http://" + mqtt_broker_ip + ":" + str(mqtt_broker_port)
